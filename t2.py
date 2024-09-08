@@ -9,7 +9,7 @@ load_dotenv()
 #nltk.download("punkt")
 
 if os.getenv('THIRD_AI_KEY') :
-    licensing.activate("THIR_AI_KEY")
+    licensing.activate(os.getenv('THIRD_AI_KEY'))
 db = ndb.NeuralDB()
 insertable_docs = []
 #streamlit run D.py
