@@ -6,7 +6,7 @@ import time
 from thirdai import licensing, neural_db as ndb
 from dotenv import load_dotenv
 load_dotenv()
-#nltk.download("punkt")
+nltk.download("punkt")
 
 if os.getenv('THIRD_AI_KEY') :
     licensing.activate(os.getenv('THIRD_AI_KEY'))
